@@ -1,6 +1,9 @@
 #! /usr/bin/env ruby
 require 'digest/sha1'
 
+# use LF instead of CRLF on Windows
+$stdout.binmode
+
 last_mark = nil
 $author = 'Scott Chacon <schacon@example.com>'
 
